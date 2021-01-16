@@ -4,7 +4,7 @@
         <p>
         You can submit feedback through the <router-link to="/info/feedback">Feedback page</router-link>, by clicking the 
         Feedback button at the top of the page, or clicking on the <v-icon color="red darken-2">mdi-alert-box</v-icon>
-        icons on individual issues. Another reason this site was made is due to the large number of infographics and memes we've
+        icons on individual issues. An inspiration for this site was the large number of infographics and memes we've
         seen circulating about how "these <em>X</em> companies own nearly everything!" that often contain extremely out-of-date
         information. We don't want that to happen here. We try to be proactive in updating things and verifying data, but this isn't
         our full time job so some things may be a bit dated or in need of update. We welcome any and all feedback to improve the site 
@@ -19,10 +19,8 @@
         <p>
         Honestly I just kept buying new foods that seemed like they were made by cool and hip new brands that 
         appealed to my #millennial demographic, and then finding out they were actually owned by the same companies
-        that own every other brand in the grocery store. Essentially it's just pettiness, curiousity, and maybe 
-        something for a family member to discover in a year or two to prompt a very awkward conversation where
-        someone asks me "so... I saw your page that tells people when companies use slave labor or are run by 
-        sexual predators... does this mean you're some kind of anti-American Commie?"
+        that own every other brand in the grocery store. Essentially it's just pettiness, curiousity, and the desire
+        to maybe help out other people who would like this sort of thing.
         </p>
         <h2 style="margin-bottom:20px">What kind of information is this site for?</h2>
         <p>
@@ -50,12 +48,6 @@
         good, they'll make sure as many people as possible know about it. But if they're doing something bad, they
         aren't exactly going to put up billboards about it. Hence, this website.
         </p>
-        <p>
-        Besides, the whole point is that there's no way to "shop ethically" in the current system. Any businesses that 
-        actually offer goods and services in a completely ethical way would be small local ones that wouldn't even 
-        make it to this site anyway; a website dedicated to hyperspecific sustainable local businesses is not a bad idea either,
-        but this ain't that.
-        </p>
         <h2 style="margin-bottom:20px">Things can't really be THAT bad, can they?</h2>
         <p>
         Did you know there's an entire brand of chocolate whose entire gimmick is just "we don't use slavery or child labor?" 
@@ -74,17 +66,14 @@
         </p>
         <p>
         For perhaps a more genuine answer, I don't think there's much just one person <em>can</em> do to change things. It's not like 
-        there's just a few big evil CEOs in charge of things that we can force to step down and then everything will be okay. No country
-        is going to elect a leader that actually fixes things in a long term and meaningful way. The entire 
-        system enables and encourages all of the garbage, and one person can't change an entire system. Think about what causes matter 
-        the most to you, and look into organizations that are fighting for them - especially local ones. Not buying from a 
-        bad business won't make them change their ways, but organized and deliberate boycotts have better luck. If you work for a company 
-        engaged in some bad practices, reach out to coworkers to try making changes internally (and if doing it through the system doesn't
-        work, there's a reason unions and strikes exist). 
+        there's just a few big evil CEOs in charge of things that we can force to step down and then everything will be okay. Think
+        about what causes matter the most to you, and look into organizations that are fighting for them - especially local ones. Not buying from a 
+        bad business won't make them change their ways, but organized and deliberate boycotts might. If you work for a company 
+        engaged in some bad practices, reach out to coworkers to try making changes internally.
         </p>
         <p>
         If you can, donate to groups working to make change. Work with them. Join protests and boycotts. Don't vote for candidates that make 
-        things worse. Organize, unionize, and do what you can to raise awareness for the issues that matter to you.
+        things worse. Organize, and do what you can to raise awareness for the issues that matter to you.
         </p>
         <h2 style="margin-bottom:20px">You're just jealous/bitter/poor or a liberal/communist/snowflake, aren't you?</h2>
         <p>
