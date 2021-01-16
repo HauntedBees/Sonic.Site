@@ -59,11 +59,11 @@
                     </v-card>
                 </v-dialog>
             </template>
-            <template v-slot:item.actions="{item}">
+            <template v-slot:[`item.actions`]="{item}">
                 <v-icon small class="mr-2" @click="Edit(item)">mdi-pencil</v-icon>
                 <v-icon small class="mr-2" @click="Delete(item)">mdi-delete</v-icon>
             </template>
-            <template v-slot:item.type="{item}">
+            <template v-slot:[`item.type`]="{item}">
                 <v-tooltip top v-if="item.type > 0">
                     <template v-slot:activator="{on, attrs}">
                         <v-icon v-bind="attrs" v-on="on">mdi-{{(issuetypes.filter(e=>e.id===item.type)[0] || {icon:"alpha-x-box"}).icon}}</v-icon>
@@ -71,13 +71,13 @@
                     <span>{{(issuetypes.filter(e=>e.id===item.type)[0] || {name:"Error"}).name}}</span>
                 </v-tooltip>
             </template>
-            <template v-slot:item.issue="{item}">
+            <template v-slot:[`item.issue`]="{item}">
                 <span :style="{'font-weight':highlightedIssueId===item.id?500:'normal','background-color':highlightedIssueId===item.id?'#FFFF00':''}">{{item.issue}}</span>
             </template>
-            <template v-slot:item.sourceurl="{item}">
+            <template v-slot:[`item.sourceurl`]="{item}">
                 <ax :href="item.sourceurl">{{FormatURL(item.sourceurl)}}</ax>
             </template>
-            <template v-slot:item.date="{item}">
+            <template v-slot:[`item.date`]="{item}">
                 {{item.startdate | moment("from")}}
                 <span v-if="item.ongoing"> - present</span>
                 <span v-if="!item.ongoing && item.enddate"> - {{item.enddate | moment("from")}}</span>

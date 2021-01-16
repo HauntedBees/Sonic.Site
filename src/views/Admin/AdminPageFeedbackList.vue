@@ -1,19 +1,19 @@
 <template>
     <v-col cols="12">
         <v-data-table :headers="headers" :items="items" :loading="$store.state.loading">
-            <template v-slot:item.name="{item}">
+            <template v-slot:[`item.name`]="{item}">
                 <span v-if="item.name && item.contact">
                     {{item.name}} ({{item.contact}})
                 </span>
                 <span v-if="item.name && !item.contact">{{item.name}}</span>
                 <span v-if="!item.name && item.contact">{{item.contact}}</span>
             </template>
-            <template v-slot:item.path="{item}">
+            <template v-slot:[`item.path`]="{item}">
                 <!--<router-link v-if="item.issue > 0" :to="'/admin/company/' + item.issueParent">{{item.issueParent}}*</router-link>-->
                 <router-link v-if="item.issue > 0" :to="{ path: '/admin/company/' + item.issueParent, query: { issueId: item.issue } }">{{item.issueParent}}*</router-link>
                 <router-link v-if="item.issue === null" :to="'/admin/company/' + item.path">{{item.path}}</router-link>
             </template>
-            <template v-slot:item.actions="{item}">
+            <template v-slot:[`item.actions`]="{item}">
                 <v-icon small class="mr-2" @click="Dismiss(item)">mdi-check</v-icon>
             </template>
         </v-data-table>

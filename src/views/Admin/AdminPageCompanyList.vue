@@ -12,8 +12,8 @@
                     </v-col>
                 </v-row>
             </template>
-            <template v-slot:item.name="{item}"><div style="cursor:pointer" @click="Edit(item)">{{item.name}}</div></template>
-            <template v-slot:item.categoryname="{item}"><div style="cursor:pointer" @click="Edit(item)">{{item.categoryname}}</div></template>
+            <template v-slot:[`item.name`]="{item}"><div style="cursor:pointer" @click="Edit(item)">{{item.name}}</div></template>
+            <template v-slot:[`item.categoryname`]="{item}"><div style="cursor:pointer" @click="Edit(item)">{{item.categoryname}}</div></template>
         </v-data-table>
     </v-col>
 </template>

@@ -62,10 +62,10 @@
                     </v-dialog>
                 </v-col>
             </template>
-            <template v-slot:item.icon="{item}">
+            <template v-slot:[`item.icon`]="{item}">
                 <v-icon>mdi-{{item.icon}}</v-icon>
             </template>
-            <template v-slot:item.actions="{item}">
+            <template v-slot:[`item.actions`]="{item}">
                 <v-icon small class="mr-2" @click="Edit(item)">mdi-pencil</v-icon>
             </template>
         </v-data-table>
