@@ -1,37 +1,32 @@
 <template>
     <v-container>
         <v-row v-if="notFound">
-            <v-col style="text-align:center">
+            <v-col class="text-center">
                 <div class="d-inline d-sm-none beeheader">{{$route.params.id}}</div>
                 <div class="d-none d-sm-inline beeheader">{{$route.params.id}}</div>
             </v-col>
         </v-row>
         <v-row v-if="notFound">
-            <v-col class="beesubmessage" style="max-width:640px;margin:0 auto;text-align:center">
+            <v-col class="beesubmessage mx-auto text-center" style="max-width:640px">
                 We don't have any information on this. If you have something you'd like to share, click 
                 <span class="beelink" @click="GiveDetails()">here</span> to submit some feedback!
             </v-col>
         </v-row>
         <v-row v-if="entry !== null">
-            <v-col style="text-align:center">
+            <v-col class="text-center">
                 <div class="d-inline d-sm-none beeheader">{{entry.name}}</div>
                 <div class="d-none d-sm-inline beeheader">{{entry.name}}</div>
                 <v-tooltip top>
                     <template v-slot:activator="{on, attrs}">
-                        <ax
-                            v-bind="attrs"
-                            v-on="on"
-                            :href="'https://duckduckgo.com/?iar=news&q=%22'+encodeURIComponent(entry.name) + '%22'"
-                            class="viewNews"
-                            >
-                            <v-icon color="#1976D2">mdi-newspaper-variant</v-icon>
+                        <ax v-bind="attrs" v-on="on" class="viewNews" :href="'https://duckduckgo.com/?iar=news&q=%22'+encodeURIComponent(entry.name) + '%22'">
+                            <v-icon color="var(--cool-text)">mdi-newspaper-variant</v-icon>
                         </ax>
                     </template>
                     <span>Search for News</span>
                 </v-tooltip>
             </v-col>
         </v-row>
-        <v-row v-if="entry !== null" style="text-align:center">
+        <v-row v-if="entry !== null" class="text-center">
             <v-col v-if="entry.typename">
                 <BeeSubheader text="Category" />
                 <div class="beesubmessage">{{entry.typename}}</div>
@@ -52,7 +47,7 @@
                 <PotentiallyBigList :title="$t('relParent0Of')" :items="entry.children"/>
             </v-col>
         </v-row>
-        <v-row v-if="showAdditional" style="text-align:center">
+        <v-row v-if="showAdditional" class="text-center">
             <v-col v-show="$store.state.loading">
                 <v-progress-circular dark color="#FFFFFF" size="64" width="4" indeterminate />
             </v-col>
@@ -67,10 +62,10 @@
             </v-col>
         </v-row>
         <v-row v-if="entry !== null">
-            <v-col v-if="!showAdditional && entry.hasAddtlRelationships" class="beesubmessage beelink beebar" style="text-align:center" @click="ShowAdditionalData">
+            <v-col v-if="!showAdditional && entry.hasAddtlRelationships" class="beesubmessage beelink beebar text-center" @click="ShowAdditionalData">
                 <span>Show Additional Relationships</span>
             </v-col>
-            <v-col v-show="HasRelations()" class="beesubmessage beelink beebar" style="text-align:center">
+            <v-col v-show="HasRelations()" class="beesubmessage beelink beebar text-center">
                 <span v-show="!showGraph" @click="ShowGraph">Show Graph</span>
                 <span v-show="showGraph" @click="HideGraph">Hide Graph</span>
             </v-col>

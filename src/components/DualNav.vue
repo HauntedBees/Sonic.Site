@@ -1,6 +1,6 @@
 <template>
     <v-container>
-        <v-navigation-drawer class="d-none d-sm-flex" color="#F90018" absolute permanent dark>
+        <v-navigation-drawer class="d-none d-sm-flex" color="var(--action)" absolute permanent dark>
             <v-list dense nav>
                 <v-list-item-group>
                     <v-list-item v-for="(item, i) in items" link :key="i" :to="item.href">
@@ -17,7 +17,7 @@
         <div class="d-block d-sm-none mobileNav">
             <v-menu top offset-y>
                 <template v-slot:activator="{ on, attrs }">
-                    <v-btn color="#F90018" dark v-bind="attrs" v-on="on">
+                    <v-btn color="var(--action)" dark v-bind="attrs" v-on="on">
                         <v-icon>mdi-dots-horizontal</v-icon>
                     </v-btn>
                 </template>

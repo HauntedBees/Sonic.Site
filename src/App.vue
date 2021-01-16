@@ -3,21 +3,18 @@
         <v-snackbar v-model="$store.state.showMessage" :color="$store.state.messageType" timeout="2000" top>{{$store.state.messageText}}</v-snackbar>
         <v-app-bar app color="#2141C6" dark>
             <div class="d-flex align-center font-weight-bold">
-                <router-link to="/" class="text-decoration-none" style="color:white">
+                <router-link to="/" class="text-decoration-none txt-white">
                     <span v-if="$store.state.auth && $route.path.indexOf('/admin') >= 0" class="d-none d-sm-flex">Sonic Admin View ({{$store.state.username}})</span>
                     <span
                         v-if="!$store.state.auth || $route.path.indexOf('/admin') < 0"
                         class="d-none d-sm-flex">
                         Sonic - The Unethical Consumption Database 
-                        <span v-show="issues > 0" style="margin-left:10px;margin-top:2px;font-size:small;font-style:italic"> ({{issues}} issues across {{entities}} companies and brands)</span>
+                        <span v-show="issues > 0" class="ml-2 mt-1" style="font-size:small;font-style:italic"> ({{issues}} issues across {{entities}} companies and brands)</span>
                     </span>
                 </router-link>
-                <router-link
-                    to="/"
-                    class="d-flex d-sm-none beesubheader"
-                    style="margin-top:7px;margin-right:5px;color:#FFFFFF;text-decoration:none">
-                        <span>S</span>
-                        <i/>
+                <router-link to="/" class="d-flex d-sm-none beesubheader mt-2 mr-1 txt-white text-decoration-none">
+                    <span>S</span>
+                    <i/>
                 </router-link>
                 <v-icon class="d-flex d-sm-none" v-if="!onHomePage && !showSearch" @click="ShowSearchBox()">mdi-magnify</v-icon>
                 <v-icon class="d-flex d-sm-none" v-if="!onHomePage && showSearch" @click="showSearch=false">mdi-close</v-icon>
@@ -33,7 +30,7 @@
                             <v-icon>mdi-comment-quote</v-icon>
                         </v-btn>
                     </template>
-                    <v-card color="#FFDA0C">
+                    <v-card color="var(--info-bg)">
                         <v-card-title>
                             Feedback
                             <v-spacer/>
@@ -55,7 +52,7 @@
         <v-main>
             <router-view />
         </v-main>
-        <v-footer fixed color="#FFDA0C">
+        <v-footer fixed color="var(--info-bg)">
             <v-spacer />
             <div>&copy; 2020<span v-if="currentYear>2020">-{{currentYear}}</span> <a href="https://www.hauntedbees.com">Haunted Bees Productions</a></div>
         </v-footer>

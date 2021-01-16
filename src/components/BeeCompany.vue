@@ -1,7 +1,7 @@
 <template>
     <v-list-item class="issue" dark :to="'/' + item.name">
-        <div class="d-block d-sm-none bg" style="color:#AAAAAA" />
-        <div class="d-none d-sm-block bg" style="color:#AAAAAA" />
+        <div class="d-block d-sm-none bg txt-grey" />
+        <div class="d-none d-sm-block bg txt-grey" />
         <v-list-item-avatar>
             <v-tooltip top>
                 <template v-slot:activator="{on, attrs}">

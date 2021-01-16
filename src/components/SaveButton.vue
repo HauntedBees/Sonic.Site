@@ -1,7 +1,7 @@
 <template>
     <v-btn class="ma-2" @click="Save" :dark="dark" :disabled="$store.state.loading" :color="dispcolor" :text="modal">
         {{text || "Save"}}
-        <v-progress-circular v-if="$store.state.loading" style="margin-left:10px" size="16" width="2" indeterminate />
+        <v-progress-circular v-if="$store.state.loading" class="ml-3" size="16" width="2" indeterminate />
     </v-btn>
 </template>
 <script>

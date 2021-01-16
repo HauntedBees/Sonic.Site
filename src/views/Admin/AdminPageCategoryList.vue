@@ -8,7 +8,7 @@
                 <v-col cols="2">
                     <v-dialog v-model="dialog" max-width="500px">
                         <template v-slot:activator="{on, attrs}">
-                            <div style="text-align: right">
+                            <div class="text-right">
                                 <v-btn color="primary" class="mb-2" dark v-bind="attrs" v-on="on">New Category</v-btn>
                             </div>
                         </template>
@@ -21,10 +21,10 @@
                                     <v-row>
                                         <v-col cols="4">
                                             <v-text-field v-model="editTarget.icon" label="Material Icon"></v-text-field>
-                                            <div style="text-align:center">
+                                            <div class="text-center">
                                                 <v-icon>mdi-{{editTarget.icon}}</v-icon>
                                             </div>
-                                            <div style="margin-top:20px">
+                                            <div class="mt-5">
                                                 <ax href="https://materialdesignicons.com/">Icon Reference</ax>
                                             </div>
                                         </v-col>

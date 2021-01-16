@@ -8,7 +8,7 @@
                 <v-col cols="2">
                     <v-dialog v-model="dialog" max-width="500px">
                         <template v-slot:activator="{on, attrs}">
-                            <div style="text-align: right">
+                            <div class="text-right">
                                 <v-btn color="primary" class="mb-2" dark v-bind="attrs" v-on="on">New Issue Type</v-btn>
                             </div>
                         </template>
@@ -26,10 +26,10 @@
                                     <v-row>
                                         <v-col cols="6">
                                             <v-text-field v-model="editTarget.icon" label="Material Icon"></v-text-field>
-                                            <div style="text-align:center">
+                                            <div class="text-center">
                                                 <v-icon>mdi-{{editTarget.icon}}</v-icon>
                                             </div>
-                                            <div style="margin-top:20px">
+                                            <div class="mt-5">
                                                 <ax href="https://materialdesignicons.com/">Icon Reference</ax>
                                             </div>
                                             <v-switch v-model="editTarget.showOnTop" label="Ongoing Issue Type" />
@@ -56,7 +56,7 @@
                 <v-icon>mdi-{{item.icon}}</v-icon>
             </template>
             <template v-slot:[`item.color`]="{item}">
-                <v-chip :color="item.color" :text-color="GetTextColor(item.color)" style="font-weight:bold">{{item.color}}</v-chip>
+                <v-chip :color="item.color" :text-color="GetTextColor(item.color)" class="font-weight-bold">{{item.color}}</v-chip>
             </template>
         </v-data-table>
     </v-col>

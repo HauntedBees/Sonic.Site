@@ -1,7 +1,7 @@
 <template>
-    <v-container style="background-color:#FFDA0C; padding:20px; border-radius: 20px">
+    <v-container class="pa-5 rounded-xl bg-text">
         <h2>You cannot buy your way into a better world.</h2>
-        <h4 style="margin-bottom:20px">But maybe don't buy from companies that use literal slave labor.</h4>
+        <h4 class="mb-5">But maybe don't buy from companies that use literal slave labor.</h4>
         <p>
         "Voting with your wallet" probably isn't an actually meaningful way of inciting change, and picking the lesser 
         of two evils does not address the fact that both options are still evil. But at the same time, you can't change

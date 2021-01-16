@@ -1,6 +1,6 @@
 <template>
-    <v-container style="background-color:#FFDA0C; padding:20px; border-radius: 20px">
-        <h2 style="margin-bottom:20px">We don't track you.</h2>
+    <v-container  class="pa-5 rounded-xl bg-text">
+        <h2 class="mb-5">We don't track you.</h2>
         <p>
         This site doesn't have tracking cookies. This site doesn't use Google Analytics. This site 
         doesn't track what you search for. No information about you or your activity on this site is 

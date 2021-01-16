@@ -2,7 +2,7 @@
     <v-container>
         <v-row>
             <v-col cols="2" class="d-none d-sm-block">
-                <h2 class="beesubmessage" style="margin-bottom:20px">Issues ({{count}})</h2>
+                <h2 class="beesubmessage mb-5">Issues ({{count}})</h2>
             </v-col>
             <v-col>
                 <v-chip-group v-model="selectedIdxes" column multiple>
@@ -13,15 +13,15 @@
             </v-col>
         </v-row>
         <v-row>
-            <v-list color="#00000000" v-if="issues.length > 0" two-line subheader>
+            <v-list color="var(--clear-list)" v-if="issues.length > 0" two-line subheader>
                 <BeeIssue v-for="item in issues" :item="item" :key="item.id" :companyId="0" />
             </v-list>
         </v-row>
-        <div v-show="!endOfList" class="row" ref="loadBottom" style="margin-bottom: 40px; margin-top: 20px">
-            <v-progress-circular style="margin: 0 auto" color="#F90018" size="64" width="2" indeterminate />
+        <div v-show="!endOfList" class="row mb-10 mt-5" ref="loadBottom">
+            <v-progress-circular class="mx-auto" color="var(--action)" size="64" width="2" indeterminate />
         </div>
-        <div v-show="endOfList" class="row" style="margin-bottom: 40px; margin-top: 20px">
-            <BeeSubheader style="margin: 0 auto" text="That's everything we have right now."/>
+        <div v-show="endOfList" class="row mb-10 mt-5">
+            <BeeSubheader class="mx-auto" text="That's everything we have right now."/>
         </div>
     </v-container>
 </template>

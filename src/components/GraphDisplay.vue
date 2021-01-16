@@ -14,12 +14,12 @@
                 width="4" 
                 indeterminate />
         </div>
-        <div class="beesubmessage beebar"
+        <div class="beesubmessage beebar text-center"
             v-show="big&&!fullyLoaded"
-            style="text-align:center; bottom: 602px">
+            style="bottom: 602px">
             {{$t("bigGraphLoader")}}
         </div>
-        <div v-if="!big" style="text-align:right; margin: 0 12%">
+        <div v-if="!big" class="text-right" style="margin: 0 12%">
             <v-btn @click="GenerateGraphImageFile" class="ma-2" dark color="blue darken-1">Download</v-btn>
         </div>
     </div>

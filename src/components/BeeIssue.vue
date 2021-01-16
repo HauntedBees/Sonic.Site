@@ -18,7 +18,8 @@
                 <span 
                     @click="contentWarningByPassed=true"
                     v-show="item.contentwarning && !contentWarningByPassed"
-                    style="display:inline-block; cursor:pointer; border: 1px solid #AAAAAA; padding:4px 8px; border-radius:8px">
+                    class="pointer py-1 px-2 rounded-lg pointer"
+                    style="display:inline-block; border: 1px solid #AAAAAA;">
                     <em>{{$t("cw")}}:</em> {{item.contentwarning}}
                     <br/>
                     <span style="font-size:0.8rem">{{$t("showDetails")}}</span>
@@ -38,10 +39,7 @@
         <v-list-item-action>
             <v-tooltip top>
                 <template v-slot:activator="{on, attrs}">
-                    <ax
-                        style="text-decoration:none"
-                        :href = "item.sourceurl"
-                        >
+                    <ax class="text-decoration-none" :href="item.sourceurl">
                         <v-icon color="blue darken-2" v-bind="attrs" v-on="on">mdi-link-box-variant</v-icon>
                     </ax>
                 </template>

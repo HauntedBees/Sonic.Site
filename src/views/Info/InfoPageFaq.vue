@@ -1,6 +1,6 @@
 <template>
-    <v-container style="background-color:#FFDA0C; padding:20px; border-radius: 20px; margin-bottom: 50px">
-        <h2 style="margin-bottom:20px">What if I find inaccurate information on here?</h2>
+    <v-container class="pa-5 mb-13 rounded-xl bg-text">
+        <h2 class="mb-5">What if I find inaccurate information on here?</h2>
         <p>
         You can submit feedback through the <router-link to="/info/feedback">Feedback page</router-link>, by clicking the 
         Feedback button at the top of the page, or clicking on the <v-icon color="red darken-2">mdi-alert-box</v-icon>
@@ -15,14 +15,14 @@
         And if you're a lawyer for some company mentioned on this site, we'll gladly remove any information if it's inaccurate or in need
         of revision, but we won't remove facts even if they make you look bad. 
         </p>
-        <h2 style="margin-bottom:20px">Why did you make this?</h2>
+        <h2 class="mb-5">Why did you make this?</h2>
         <p>
         Honestly I just kept buying new foods that seemed like they were made by cool and hip new brands that 
         appealed to my #millennial demographic, and then finding out they were actually owned by the same companies
         that own every other brand in the grocery store. Essentially it's just pettiness, curiousity, and the desire
         to maybe help out other people who would like this sort of thing.
         </p>
-        <h2 style="margin-bottom:20px">What kind of information is this site for?</h2>
+        <h2 class="mb-5">What kind of information is this site for?</h2>
         <p>
         The intentions are to help people figure out who actually owns brands/companies/products and to highlight 
         issues with them. We try to approach what an "issue" is in a nonpartisan way. For things like 
@@ -41,14 +41,14 @@
         Also, saying "Company X is a bad and should be destroyed" is considered "an opinion," whereas "Person Y is bad and should
         be destroyed" is considered "a threat."
         </p>
-        <h2 style="margin-bottom:20px">Why don't you share good things companies do, too?</h2>
+        <h2 class="mb-5">Why don't you share good things companies do, too?</h2>
         <p>
         We're not a PR firm. You can find out good things companies do by looking at the "Philanthropy" sections of
         their websites or watching their advertisements during Pride Month. If a company or celebrity is doing something 
         good, they'll make sure as many people as possible know about it. But if they're doing something bad, they
         aren't exactly going to put up billboards about it. Hence, this website.
         </p>
-        <h2 style="margin-bottom:20px">Things can't really be THAT bad, can they?</h2>
+        <h2 class="mb-5">Things can't really be THAT bad, can they?</h2>
         <p>
         Did you know there's an entire brand of chocolate whose entire gimmick is just "we don't use slavery or child labor?" 
         That's the baseline. "What if we made chocolate bars and didn't use slaves to get the cocoa?" That was in 2005. Since then,
@@ -59,7 +59,7 @@
         If the production of a snack food is still so deeply intertwined with such terrible practices, do you really think that
         things are going to fare much better in more profitable or necessary industries?
         </p>
-        <h2 style="margin-bottom:20px">This is terrible. What can I do?</h2>
+        <h2 class="mb-5">This is terrible. What can I do?</h2>
         <p>
         If I knew how to make things better, I'd like to think that I'd be doing those things instead of making this website. Maybe 
         this website <em>is</em> making things better. Maybe you should make a website, too.
@@ -75,12 +75,12 @@
         If you can, donate to groups working to make change. Work with them. Join protests and boycotts. Don't vote for candidates that make 
         things worse. Organize, and do what you can to raise awareness for the issues that matter to you.
         </p>
-        <h2 style="margin-bottom:20px">You're just jealous/bitter/poor or a liberal/communist/snowflake, aren't you?</h2>
+        <h2 class="mb-5">You're just jealous/bitter/poor or a liberal/communist/snowflake, aren't you?</h2>
         <p>
         Hey, if you think "this company's CEO is a murderer, and murder is bad" is a partisan issue, then that says more
         about you than it does about us. 
         </p>
-        <h2 style="margin-bottom:20px">Do people really ask you questions?</h2>
+        <h2 class="mb-5">Do people really ask you questions?</h2>
         <p>
         No, but we figured we'd get a head start so we wouldn't have to bother writing this page later in case someone does.
         </p>

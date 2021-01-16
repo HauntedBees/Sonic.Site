@@ -1,6 +1,6 @@
 <template>
-    <v-container style="background-color:#FFDA0C; padding:20px; border-radius: 20px">
-        <h2 style="margin-bottom:20px">Feedback</h2>
+    <v-container class="pa-5 rounded-xl bg-text">
+        <h2 class="mb-5">Feedback</h2>
         <FeedbackForm/>
     </v-container>
 </template>

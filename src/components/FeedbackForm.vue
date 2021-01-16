@@ -19,16 +19,16 @@
             </v-col>
         </v-row>
         <v-row>
-            <v-col style="text-align: center">
-                <img style="margin-top: 10px" v-if="imgUrl!==''" :src="imgUrl" />
+            <v-col class="text-center">
+                <img class="mt-2" v-if="imgUrl!==''" :src="imgUrl" />
             </v-col>
             <v-col>
                 <v-text-field v-model="form.captcha" filled label="CAPTCHA" />
             </v-col>
         </v-row>
         <v-row>
-            <v-col style="text-align: center">
-                <SaveButton @save="SubmitFeedback" dark text="Submit" color="#F90018" />
+            <v-col class="text-center">
+                <SaveButton @save="SubmitFeedback" dark text="Submit" color="var(--action)" />
             </v-col>
         </v-row>
         <v-row>

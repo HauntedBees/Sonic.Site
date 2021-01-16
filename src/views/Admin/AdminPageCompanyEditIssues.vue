@@ -4,7 +4,7 @@
             <template v-slot:top>
                 <v-dialog v-model="dialog" max-width="500px">
                     <template v-slot:activator="{on, attrs}">
-                        <div style="text-align: right">
+                        <div class="text-right">
                             <v-btn color="primary" class="mb-2" dark v-bind="attrs" v-on="on">New Issue</v-btn>
                         </div>
                     </template>

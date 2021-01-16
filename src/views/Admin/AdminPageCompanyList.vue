@@ -8,12 +8,12 @@
                     </v-col>
                     <v-col cols="4">
                         <v-btn color="primary" class="mb-2" dark @click="Edit(null)">New Company</v-btn>
-                        <v-btn color="primary" class="mb-2" style="margin-left:10px" dark @click="RebuildRelationships()">Rebuild Relationships</v-btn>
+                        <v-btn color="primary" class="mb-2 ml-3" dark @click="RebuildRelationships()">Rebuild Relationships</v-btn>
                     </v-col>
                 </v-row>
             </template>
-            <template v-slot:[`item.name`]="{item}"><div style="cursor:pointer" @click="Edit(item)">{{item.name}}</div></template>
-            <template v-slot:[`item.categoryname`]="{item}"><div style="cursor:pointer" @click="Edit(item)">{{item.categoryname}}</div></template>
+            <template v-slot:[`item.name`]="{item}"><div class="pointer" @click="Edit(item)">{{item.name}}</div></template>
+            <template v-slot:[`item.categoryname`]="{item}"><div class="pointer" @click="Edit(item)">{{item.categoryname}}</div></template>
         </v-data-table>
     </v-col>
 </template>

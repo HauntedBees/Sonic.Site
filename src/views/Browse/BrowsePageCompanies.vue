@@ -2,7 +2,7 @@
     <v-col cols="12">
         <v-row>
             <v-col class="d-none d-sm-block">
-                <h2 class="beesubmessage" style="margin-bottom:20px">Entries ({{count}})</h2>
+                <h2 class="beesubmessage mb-5">Entries ({{count}})</h2>
             </v-col>
             <v-col>
                 <v-text-field v-model="search" dark append-icon="mdi-magnify" label="Search" />
@@ -10,16 +10,16 @@
         </v-row>
         <v-row>
             <v-col>
-                <v-list color="#00000000" v-if="companies.length > 0" two-line subheader>
+                <v-list color="var(--clear-list)" v-if="companies.length > 0" two-line subheader>
                     <BeeCompany v-for="item in companies" :item="item" :key="item.id" />
                 </v-list>
             </v-col>
         </v-row>
-        <div v-show="!endOfList" class="row" ref="loadBottom" style="margin-bottom: 40px; margin-top: 20px">
-            <v-progress-circular style="margin: 0 auto" color="#F90018" size="64" width="2" indeterminate />
+        <div v-show="!endOfList" class="row mb-10 mt-5" ref="loadBottom">
+            <v-progress-circular class="mx-auto" color="var(--action)" size="64" width="2" indeterminate />
         </div>
-        <div v-show="endOfList" class="row" style="margin-bottom: 40px; margin-top: 20px">
-            <BeeSubheader style="margin: 0 auto" text="That's everything we have right now."/>
+        <div v-show="endOfList" class="row mb-10 mt-5">
+            <BeeSubheader class="mx-auto" text="That's everything we have right now."/>
         </div>
     </v-col>
 </template>

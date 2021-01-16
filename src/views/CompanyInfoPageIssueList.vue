@@ -1,15 +1,15 @@
 <template>
     <div>
         <v-row v-if="noIssues">
-            <v-col class="beesubmessage" style="max-width:640px;margin:0 auto;text-align:center">
+            <v-col class="beesubmessage mx-auto text-center" style="max-width:640px">
                 We don't have any issues on this. If you have something you'd like to share, click 
                 <span class="beelink" @click="GiveDetails()">here</span> to submit some feedback!
             </v-col>
         </v-row>
-        <div class="text-center" style="margin-bottom:10px">
+        <div class="text-center mb-3">
             <BeeTopIssue v-for="(item, idx) in topIssues" :key="idx" :item="item" />
         </div>
-        <v-list color="#00000000" v-if="standardIssues.length > 0" two-line subheader>
+        <v-list color="var(--clear-list)" v-if="standardIssues.length > 0" two-line subheader>
             <BeeIssue v-for="(item, idx) in standardIssues" :item="item" :key="idx" :companyId="companyId" :companyName="companyName" />
         </v-list>
     </div>

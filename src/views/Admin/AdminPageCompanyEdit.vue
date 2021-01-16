@@ -1,5 +1,5 @@
 <template>
-    <v-form ref="form" style="padding:10px 40px; background-color: white; width: 100%">
+    <v-form ref="form" class="py-2 px-10 bg-text" style="width: 100%">
         <v-row>
             <v-col cols="8">
                 <v-text-field
@@ -95,11 +95,7 @@
         <v-row>
             <v-col cols="1"/>
             <v-col cols="2">
-                <v-switch
-                    v-model="showIcon"
-                    label="Has Logo"
-                    style="margin-top:0px"
-                    />
+                <v-switch v-model="showIcon" label="Has Logo" class="mt-0" />
             </v-col>
             <v-col cols="2">
                 <v-text-field v-show="showIcon" v-model="company.img" type="number" dense label="File #" />

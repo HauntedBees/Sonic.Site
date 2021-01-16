@@ -2,21 +2,10 @@
     <v-container>
         <v-row class="d-block d-sm-none">
             <v-chip-group column>
-                <v-chip
-                    v-show="browseTree.length > 0"
-                    dark
-                    class="selectionchip"
-                    @click="GoBack(-1)"
-                >
+                <v-chip v-show="browseTree.length > 0" dark class="selectionchip" @click="GoBack(-1)">
                     <v-icon>mdi-arrow-left-circle</v-icon> Reset
                 </v-chip>
-                <v-chip
-                    v-for="(it, idx) in browseTree"
-                    :key="it.id"
-                    dark
-                    class="selectionchip"
-                    @click="GoBack(idx)"
-                    >
+                <v-chip v-for="(it, idx) in browseTree" :key="it.id" dark class="selectionchip" @click="GoBack(idx)">
                     <v-icon>mdi-{{it.icon}}</v-icon> {{it.name}}
                 </v-chip>
             </v-chip-group>
@@ -25,35 +14,18 @@
             <v-col cols="3" class="d-none d-sm-block">
                 <h2 class="beesubmessage">Categories <span v-show="filterCategory !== 0">({{count}})</span></h2>
                 <v-chip-group column>
-                    <v-chip
-                        v-show="browseTree.length > 0"
-                        dark
-                        class="selectionchip"
-                        @click="GoBack(-1)"
-                    >
+                    <v-chip v-show="browseTree.length > 0" dark class="selectionchip" @click="GoBack(-1)">
                         <v-icon>mdi-arrow-left-circle</v-icon> Reset
                     </v-chip>
-                    <v-chip
-                        v-for="(it, idx) in browseTree"
-                        :key="it.id"
-                        dark
-                        class="selectionchip"
-                        @click="GoBack(idx)"
-                        >
+                    <v-chip v-for="(it, idx) in browseTree" :key="it.id" dark class="selectionchip" @click="GoBack(idx)">
                         <v-icon>mdi-{{it.icon}}</v-icon> {{it.name}}
                     </v-chip>
                 </v-chip-group>
             </v-col>
             <v-col>
                 <v-chip-group column>
-                    <v-chip
-                        v-for="it in categories"
-                        :key="it.id"
-                        @click="LoadCategories(it.id)"
-                        dark
-                        class="selectionchip"
-                        :style="{ 'border-right': `2px solid ${it.color}`, 'border-bottom': `2px solid ${it.color}` }"
-                        >
+                    <v-chip v-for="it in categories" :key="it.id" @click="LoadCategories(it.id)" dark class="selectionchip"
+                        :style="{ 'border-right': `2px solid ${it.color}`, 'border-bottom': `2px solid ${it.color}` }">
                         <v-icon>mdi-{{it.icon}}</v-icon> {{it.name}}
                     </v-chip>
                 </v-chip-group>
@@ -61,17 +33,17 @@
         </v-row>
         <v-row>
             <v-col>
-                <v-list color="#00000000" v-if="companies.length > 0" two-line subheader>
+                <v-list color="var(--clear-list)" v-if="companies.length > 0" two-line subheader>
                     <BeeCompany v-for="item in companies" :item="item" :key="item.id" />
                 </v-list>
             </v-col>
         </v-row>
-        <div v-show="!endOfList" class="row" ref="loadBottom" style="margin-bottom: 40px; margin-top: 20px">
-            <v-progress-circular style="margin: 0 auto" color="#F90018" size="64" width="2" indeterminate />
+        <div v-show="!endOfList" class="row mb-10 mt-5" ref="loadBottom">
+            <v-progress-circular class="mx-auto" color="var(--action)" size="64" width="2" indeterminate />
         </div>
-        <div v-show="endOfList" class="row" style="margin-bottom: 40px; margin-top: 20px">
-            <BeeSubheader v-show="filterCategory === 0" style="margin: 0 auto" text="Select a category to begin drilling down!"/>
-            <BeeSubheader v-show="filterCategory !== 0" style="margin: 0 auto" text="That's everything we have right now."/>
+        <div v-show="endOfList" class="row mb-10 mt-5">
+            <BeeSubheader v-show="filterCategory === 0" class="mx-auto" text="Select a category to begin drilling down!"/>
+            <BeeSubheader v-show="filterCategory !== 0" class="mx-auto" text="That's everything we have right now."/>
         </div>
     </v-container>
 </template>

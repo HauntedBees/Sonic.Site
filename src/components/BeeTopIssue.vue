@@ -2,14 +2,7 @@
     <div style="display:inline-block">
         <v-tooltip top style="vertical-align:top">
             <template v-slot:activator="{on, attrs}">
-                    <v-chip
-                        v-bind="attrs"
-                        v-on="on"
-                        @click="showSources=!showSources"
-                        dark
-                        class="selectionchip"
-                        style="margin:5px;cursor:pointer"
-                        >
+                    <v-chip v-bind="attrs" v-on="on" @click="showSources=!showSources" dark class="selectionchip ma-1 pointer">
                         <v-icon :color="item.issueColor">mdi-{{item.issueIcon}}</v-icon>
                     </v-chip>
             </template>

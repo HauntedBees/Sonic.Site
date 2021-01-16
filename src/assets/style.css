@@ -3,6 +3,18 @@
 #app { background: repeat url("bg.png"); color: #000000 }
 footer a { color: #000000 !important }
 
+:root {
+    --info-bg: #FFDA0C;
+    --action: #F90018;
+    --cool-text: #1976D2;
+    --clear-list: #00000000;
+}
+
+.bg-text { background-color: var(--info-bg) }
+.txt-white { color: #FFFFFF!important }
+.txt-grey { color: #AAAAAA!important }
+.pointer { cursor: pointer }
+
 /* Company Page Stuff */
 .beeheader {
     color: #FFFFFF;
@@ -84,7 +96,7 @@ h2.beesubmessage {
 
 /* Lists */
 .v-list-item.issue {
-    background-color: #00000000;
+    background-color: var(--clear-list);
     margin-bottom: 20px;
 }
 .v-list-item.issue > .bg {
@@ -106,7 +118,7 @@ h2.beesubmessage {
 
 /* Browse Page Filters */
 .selectionchip {
-    background-color: #000000!important;
+    background-color: var(--clear-list)!important;
     color: #FFFFFF!important;
 }
 
