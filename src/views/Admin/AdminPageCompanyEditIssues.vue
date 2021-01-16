@@ -75,7 +75,7 @@
                 <span :style="{'font-weight':highlightedIssueId===item.id?500:'normal','background-color':highlightedIssueId===item.id?'#FFFF00':''}">{{item.issue}}</span>
             </template>
             <template v-slot:item.sourceurl="{item}">
-                <a :href="item.sourceurl" target="_blank">{{FormatURL(item.sourceurl)}}</a>
+                <ax :href="item.sourceurl">{{FormatURL(item.sourceurl)}}</ax>
             </template>
             <template v-slot:item.date="{item}">
                 {{item.startdate | moment("from")}}

@@ -16,7 +16,7 @@
             <span>{{item.issueType}}</span>
         </v-tooltip>
         <div v-show="showSources">
-            <a v-for="(source, idx) in item.sources" :key="idx" :href="source" rel="external nofollow noopener noreferrer">[Source]</a>
+            <ax v-for="(source, idx) in item.sources" :key="idx" :href="source">[Source]</ax>
         </div>
     </div>
 </template>

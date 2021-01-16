@@ -37,8 +37,8 @@
                     Sorry for the CAPTCHA - we know they're not the most accessible, but we're not aware of any better ways to 
                     make sure you aren't a robot or troll spamming us with tons of garbage (other than using some fancier third-party 
                     verification system, but we're skeptical of privacy issues surrounding them). If you can't use a CAPTCHA, you can message us on Twitter at
-                    <a rel="external nofollow noopener noreferrer" href="https://twitter.com/hauntedbees" target="_blank">@hauntedbees</a> or via email at 
-                    <a rel="external nofollow noopener noreferrer" href="mailto:fench@hauntedbees.com">fench@hauntedbees.com</a>.
+                    <ax href="https://twitter.com/hauntedbees">@hauntedbees</ax> or via email at 
+                    <a href="mailto:fench@hauntedbees.com">fench@hauntedbees.com</a>.
                 </p>
             </v-col>
         </v-row>

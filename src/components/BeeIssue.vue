@@ -38,14 +38,12 @@
         <v-list-item-action>
             <v-tooltip top>
                 <template v-slot:activator="{on, attrs}">
-                    <a
-                        target="_blank"
+                    <ax
                         style="text-decoration:none"
                         :href = "item.sourceurl"
-                        rel = "external nofollow noopener noreferrer"
                         >
                         <v-icon color="blue darken-2" v-bind="attrs" v-on="on">mdi-link-box-variant</v-icon>
-                    </a>
+                    </ax>
                 </template>
                 <span>{{$t("viewSource")}}</span>
             </v-tooltip>

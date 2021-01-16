@@ -18,16 +18,14 @@
                 <div class="d-none d-sm-inline beeheader">{{entry.name}}</div>
                 <v-tooltip top>
                     <template v-slot:activator="{on, attrs}">
-                        <a
+                        <ax
                             v-bind="attrs"
                             v-on="on"
-                            rel="external nofollow noopener noreferrer"
                             :href="'https://duckduckgo.com/?iar=news&q=%22'+encodeURIComponent(entry.name) + '%22'"
-                            target="_blank"
                             class="viewNews"
                             >
                             <v-icon color="#1976D2">mdi-newspaper-variant</v-icon>
-                        </a>
+                        </ax>
                     </template>
                     <span>Search for News</span>
                 </v-tooltip>
