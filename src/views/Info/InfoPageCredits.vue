@@ -8,7 +8,7 @@
         roughly meaning that anyone can use and change the site's code, as long as they release their changes under the
         same license. All text is licensed under the 
         <ax href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike License</ax>,
-        which basically means the same thing. The source code is available on <ax href="https://github.com/HauntedBees/Sonic">GitHub</ax>,
+        which basically means the same thing. The source code is available on <ax href="https://github.com/HauntedBees/Sonic.Site">GitHub</ax>,
         as is a relatively up-to-date copy of the database schema and contents.
         </p>
         <p>
