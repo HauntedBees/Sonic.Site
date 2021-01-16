@@ -1,6 +1,8 @@
-# sonic - a relational database visualization
+# Sonic.Site
 
 ## wut
+The frontend for sonic - a relational database visualization. Check out the [backend](https://github.com/HauntedBees/Sonic.API/), too!
+
 A web app that displays relationships between entities and data points about those entities - for example, if A is a parent of B and C, and C has some data, you will see C's 
 data point on B's page as a related entity, on A's page as a child entity, and so on. Admin users can add entities, link them, add data points, and assign categories to both the 
 entities and data points. Users can search for entities, browse entities and data points by name and category, and view graphs showing the relationships between entities.
@@ -57,9 +59,6 @@ As are the following dev dependencies:
  * [Sass](https://sass-lang.com/)
  * [sass-loader](https://webpack.js.org/loaders/sass-loader/)
 
-For the webservice, the following PHP library is used:
- * [Gregwar Captcha](https://github.com/Gregwar/Captcha)
-
 ## building
 ### setup
 ```
@@ -81,4 +80,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## want to make changes?
-cool. do the forking and submitting or whatever. if it's good stuff I'll probably merge it up. if your issue is with the data itself on the live site or in the data.sql file here, [please use the Feedback page](https://www.hauntedbees.com/sonic.html#/info/feedback) or contact me through one of the methods described there.
+cool. do the forking and submitting or whatever. if it's good stuff I'll probably merge it up. if your issue is with the data itself on the live site, [please use the Feedback page](https://www.hauntedbees.com/sonic.html#/info/feedback) or contact me through one of the methods described there.
