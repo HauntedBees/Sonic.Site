@@ -6,7 +6,13 @@ class Beeliever {
     }
     getHeaders() { return this.withCredentials ? { "Authorization": "Bearer " + store.state.token } : undefined; }
     handleResponse(response) {
-        if(!response.ok) { // TODO: actually show response messages if they exist
+        if(!response.ok && response.status === 401) {
+            throw new Error("Access denied.");
+        }
+        return response.json();
+    }
+    handleResponseNoError(response) {
+        if(!response.ok) {
             if(response.status === 401) {
                 throw new Error("Access denied.");
             } else {
@@ -20,7 +26,7 @@ class Beeliever {
             method: "GET",
             headers: this.getHeaders(),
             credentials: this.withCredentials ? "same-origin" : "omit"
-        }).then(this.handleResponse).then(data => {
+        }).then(this.handleResponseNoError).then(data => {
             successCallback(data);
         }).catch(error => {
             store.state.auth = false;
@@ -44,7 +50,7 @@ class Beeliever {
             } else if(failCallback !== undefined) {
                 failCallback(data);
             } else if(store) {
-                store.commit("triggerError", data.result);
+                store.commit("triggerError", data.message);
             }
             if(store) { store.commit("endLoad"); }
         }).catch(error => {
@@ -67,7 +73,7 @@ class Beeliever {
             if(data.success) {
                 successCallback(data);
             } else {
-                store.commit("triggerError", data.result);
+                store.commit("triggerError", data.message);
             }
             store.commit("endLoad");
         }).catch(error => {
