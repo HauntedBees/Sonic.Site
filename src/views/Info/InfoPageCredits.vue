@@ -1,6 +1,6 @@
 <template>
     <v-container class="pa-5 rounded-xl bg-text">
-        <h2 class="mb-5">Sonic v0.69 [2021JAN16]</h2>
+        <h2 class="mb-5">Sonic v0.69 [2021JAN20]</h2>
         <p>
         This site was written by <a href="https://www.hauntedbees.com/">Sean Finch</a>, using the
         <ax href="https://vuejs.org/">Vue.js</ax> framework. The code is licensed under the

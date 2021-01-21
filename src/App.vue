@@ -18,8 +18,8 @@
                 </router-link>
                 <v-icon class="d-flex d-sm-none" v-if="!onHomePage && !showSearch" @click="ShowSearchBox()">mdi-magnify</v-icon>
                 <v-icon class="d-flex d-sm-none" v-if="!onHomePage && showSearch" @click="showSearch=false">mdi-close</v-icon>
-                <CompanyAutocomplete v-show="!onHomePage && showSearch" ref="mobilesearch" :class="{'d-flex':showSearch, 'd-sm-none':showSearch}" @select="Select" addtl-style="width: 260px" />
-                <CompanyAutocomplete v-show="!onHomePage" :class="{'d-none d-sm-flex': $route.path!=='/'}" @select="Select" addtl-style="width: 400px" />
+                <CompanyAutocomplete v-show="!onHomePage && showSearch" ref="mobilesearch" v-class.d-flex.d-sm-none="showSearch" @select="Select" addtl-style="width: 260px" />
+                <CompanyAutocomplete v-show="!onHomePage" v-class.d-none.d-sm-flex="$route.path !== '/'" @select="Select" addtl-style="width: 400px" />
             </div>
             <v-spacer/>
             <div>
