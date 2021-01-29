@@ -5,14 +5,9 @@
         </div>
         <div class="graph loadedgraph" :style="{'width':big?'100%':'75%', 'height':big?'780px':'320px'}" />
         <div style="height:0px">
-            <v-progress-circular
-                v-show="!fullyLoaded"
-                dark
-                :style="{position:'relative', left: '47%', bottom: big?'502px':'202px' }"
-                color="#FFFFFF"
-                size="64"
-                width="4" 
-                indeterminate />
+            <div v-show="!fullyLoaded" :style="{position:'relative', bottom: big?'502px':'202px' }">
+                <Loader color="#FFFFFF" />
+            </div>
         </div>
         <div class="beesubmessage beebar text-center"
             v-show="big&&!fullyLoaded"

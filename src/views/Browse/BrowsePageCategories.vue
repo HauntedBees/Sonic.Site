@@ -38,9 +38,11 @@
                 </v-list>
             </v-col>
         </v-row>
-        <div v-show="!endOfList" class="row mb-10 mt-5" ref="loadBottom">
-            <v-progress-circular class="mx-auto" color="var(--action)" size="64" width="2" indeterminate />
-        </div>
+        <v-row v-show="!endOfList" ref="loadBottom">
+            <v-col>
+                <Loader color="var(--action)" size="64" width="2" />
+            </v-col>
+        </v-row>
         <div v-show="endOfList" class="row mb-10 mt-5">
             <BeeSubheader v-show="filterCategory === 0" class="mx-auto" text="Select a category to begin drilling down!"/>
             <BeeSubheader v-show="filterCategory !== 0" class="mx-auto" text="That's everything we have right now."/>

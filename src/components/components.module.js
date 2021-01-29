@@ -1,5 +1,5 @@
 import Vue from "vue";
-import { ExternalLink, ClassDirective, LoadableButton } from 'bee-vue-gang';
+import { ExternalLink, ClassDirective, LoadableButton, Loader } from 'bee-vue-gang';
 import CompanyAutocomplete from "src/components/CompanyAutocomplete";
 import BeeSubheader from "src/components/BeeSubheader";
 import GraphDisplay from "src/components/GraphDisplay";
@@ -13,7 +13,7 @@ Vue.component("BeeCompany", BeeCompany);
 Vue.component("BeeIssue", BeeIssue);
 Vue.component("BeeTopIssue", BeeTopIssue);
 Vue.component("BeeSubheader", BeeSubheader);
-//Vue.component("Loader", Loader);
+Vue.component("Loader", Loader);
 Vue.component("LoadableButton", LoadableButton);
 Vue.component("GraphDisplay", GraphDisplay);
 Vue.component("PotentiallyBigList", PotentiallyBigList);

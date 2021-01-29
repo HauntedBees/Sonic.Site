@@ -49,7 +49,7 @@
         </v-row>
         <v-row v-if="showAdditional" class="text-center">
             <v-col v-show="$store.state.loading">
-                <v-progress-circular dark color="#FFFFFF" size="64" width="4" indeterminate />
+                <Loader color="#FFFFFF" />
             </v-col>
             <v-col v-show="entry.investments.length > 0">
                 <PotentiallyBigList :title="$t('relParent1Of')" :items="entry.investments"/>
