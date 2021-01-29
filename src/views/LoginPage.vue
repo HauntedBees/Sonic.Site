@@ -15,7 +15,7 @@
                         required
                         @click:append="showPassword=!showPassword"
                         />
-                    <SaveButton @save="Login" text="Log In" />
+                    <LoadableButton class="mr-0" @submit="Login" css="" dark :valid="true" text="Log In" loadtext="Logging In" color="primary" />
                 </v-col>
                 <v-col cols="4"/>
             </v-row>

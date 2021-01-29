@@ -29,7 +29,6 @@ export default {
     components/BeeIssue.vue             -> "Ongoing since #date#"
     components/FeedbackForm.vue         -> all of it
     components/PotentiallyBigList.vue   -> "and #n# others"
-    components/SaveButton.vue           -> text / "Save"
     views/*
 */
 // {{$t("")}}

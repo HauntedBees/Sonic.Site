@@ -16,6 +16,7 @@
             </v-col>
         </v-row>
         <div v-show="!endOfList" class="row mb-10 mt-5" ref="loadBottom">
+            <!--<Loader color="var(--action)" size="64" width="2"/>-->
             <v-progress-circular class="mx-auto" color="var(--action)" size="64" width="2" indeterminate />
         </div>
         <div v-show="endOfList" class="row mb-10 mt-5">

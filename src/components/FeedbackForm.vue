@@ -28,7 +28,7 @@
         </v-row>
         <v-row>
             <v-col class="text-center">
-                <SaveButton @save="SubmitFeedback" dark text="Submit" color="var(--action)" />
+                <LoadableButton class="mr-0" @submit="SubmitFeedback" css="" dark :valid="true" text="Submit" loadtext="Submitting" color="var(--action)" />
             </v-col>
         </v-row>
         <v-row>

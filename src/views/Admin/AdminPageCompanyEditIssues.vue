@@ -53,7 +53,7 @@
                         </v-card-text>
                         <v-card-actions>
                             <v-spacer></v-spacer>
-                            <SaveButton @save="Save" modal />
+                            <LoadableButton class="mr-0" @submit="Save" css="" dark :valid="true" color="blue darken-1" />
                             <v-btn color="blue darken-1" text @click="Close">Cancel</v-btn>
                         </v-card-actions>
                     </v-card>

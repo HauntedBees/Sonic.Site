@@ -116,7 +116,7 @@
         <v-row>
             <v-col cols="5" />
             <v-col cols="7">
-                <SaveButton @save="Save" />
+                <LoadableButton class="mr-0" @submit="Save" css="" dark :valid="true" color="primary" />
                 <v-btn class="ma-2" @click="Clear">Clear</v-btn>
                 <v-btn class="ma-2" @click="ClearPartial">Partial Clear</v-btn>
                 <v-btn class="ma-2" to="/admin/company">Back</v-btn>
