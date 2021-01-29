@@ -13,7 +13,7 @@
             </v-col>
         </v-row>
         <v-row>
-            <v-col>
+            <v-col class="ml-md-4">
                 <v-list color="var(--clear-list)" v-if="issues.length > 0" two-line subheader>
                     <BeeIssue v-for="item in issues" :item="item" :key="item.id" :companyId="0" />
                 </v-list>

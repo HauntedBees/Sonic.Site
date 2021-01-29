@@ -118,7 +118,7 @@ h2.beesubmessage {
 
 /* Browse Page Filters */
 .selectionchip {
-    background-color: var(--clear-list)!important;
+    background-color: #000000!important;
     color: #FFFFFF!important;
 }
 
