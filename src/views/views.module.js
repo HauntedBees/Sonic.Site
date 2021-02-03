@@ -11,16 +11,12 @@ const routes = [
     {
         path: "/",
         component: LandingPage,
-        meta: {
-            title: "Sonic - The Unethical Consumption Database"
-        }
+        meta: { title: "Sonic - The Unethical Consumption Database" }
     },
     {
         path: "/login",
         component: LoginPage,
-        meta: {
-            title: "You shouldn't be here."
-        }
+        meta: { title: "You shouldn't be here." }
     },
     InfoRoute,
     AdminRoute,
@@ -29,12 +25,12 @@ const routes = [
         path: "/:id",
         name: "company",
         component: CompanyInfoPage,
-        meta: {
-            titleFunc: to => `Sonic - ${to.params.id}`
-        }
+        meta: { titleFunc: to => `Sonic - ${to.params.id}` }
     }
 ];
 const router = new VueRouter({
+    mode: "history",
+    base: process.env.BASE_URL,
     routes,
     scrollBehavior() { return { x: 0, y: 0 }; }
 });
