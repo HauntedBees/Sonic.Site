@@ -35,6 +35,7 @@ class Beeliever {
     }
     get(path, param, successCallback, failCallback, errorCallback, forceCredentials) {
         if(store) { store.commit("startLoad"); }
+        if(Array.isArray(param)) { param = param.map(e => encodeURIComponent(e)); }
         let paramStr = !param ? "/" : ("/" + encodeURIComponent(JSON.stringify(param)));
         fetch(this.path + path + paramStr, {
             method: "GET",
